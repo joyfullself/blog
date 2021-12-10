@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {PostCard, Categories, PostWidget } from '../components';
 
 const posts = [
   { title: 'Post1', excerpt: 'Post1 Excerpt'},
@@ -15,10 +16,7 @@ export default function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post,index) => (
-            <div>
-              {post.title}
-              {post.excerpt}
-            </div>
+            <PostCard post={post} />
           ))}
         </div>
         <div className="lg:col-span-4 col-span-1">
