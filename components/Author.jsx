@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Categories = () => {
+const Author = () => {
     return (
         <div>
-            Categories
+             <h1>Author</h1>
         </div>
     )
 }
 
-export default Categories
+export default Author
