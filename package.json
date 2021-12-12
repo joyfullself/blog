@@ -7,9 +7,11 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
     "classnames": "^2.3.1",
     "graphql": "^16.1.0",
     "graphql-request": "^3.7.0",
+    "heroicons": "^1.0.5",
     "html-react-parser": "^1.4.2",
     "moment": "^2.29.1",
     "next": "latest",
