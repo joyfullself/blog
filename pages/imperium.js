@@ -23,17 +23,17 @@ export default function Imperium() {
         //             src="1.png"
         //         />
         // </div>
-        <div class="grid grid-cols-3 gap-4 justify-items-center">
-            <div class="col-span-3 ...">
+        <div className="grid grid-cols-3 gap-4 justify-items-center">
+            <div className="col-span-3 ...">
                 <img
                     className="h-20 w-15"
                     src="imperium_logo.png"
                 />
             </div>
-            <div class="col-span-3 ...">
-                <h1 class="font-bold text-4xl">A lasting gift for ever-lasting youth</h1>
+            <div className="col-span-3 ...">
+                <h1 className="font-bold text-4xl text-center text-gray-700  px-4 lg:px-20">A lasting gift for ever-lasting youth</h1>
             </div>
-            <div class="col-span-3 ...">
+            <div className="col-span-3 ...">
                 <a
                     href="/"
                     className="transition duration-500 ease hover:underline block px-3 py-2 rounded-md text-base font-medium"
@@ -41,18 +41,18 @@ export default function Imperium() {
                     <p className="text-blue-900 font-semibold">Shop gifts</p>
                 </a>
             </div>
-            <div class="col-span-3 ...">
+            <div className="col-span-3 ...">
                 <img
                     className="h-full w-full pb-8"
                     src="1.png"
                 />
             </div>
-            <div class="...">02</div>
-            <div class="...">03</div>
-            <div class="col-span-2 ...">04</div>
-            <div class="...">05</div>
-            <div class="...">06</div>
-            <div class="col-span-2 ...">07</div>
+            <div className="...">02</div>
+            <div className="...">03</div>
+            <div className="col-span-2 ...">04</div>
+            <div className="...">05</div>
+            <div className="...">06</div>
+            <div className="col-span-2 ...">07</div>
         </div>
     )
 }
