@@ -10,7 +10,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
       <div className="z-1">
-        <nav className="bg-gray-800 mb-8">
+        <nav className="bg-gray-800 mb-8 sticky">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
@@ -116,10 +116,10 @@ const Header = () => {
 
           <Transition
             show={isOpen}
-            enter="transition ease-out duration-100 transform"
+            enter="transition ease-out duration-500 transform"
             enterFrom="opacity-0 scale-95"
             enterTo="opacity-100 scale-100"
-            leave="transition ease-in duration-75 transform"
+            leave="transition ease-in duration-100 transform"
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
