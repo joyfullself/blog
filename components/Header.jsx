@@ -1,11 +1,11 @@
-import { Fragment } from 'react'
+import { Fragment, useState  } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Blog', href: '/', current: true },
+  { name: 'Blog', href: '/', current: false },
   { name: 'Team', href: '/team', current: false },
-  { name: 'Imperium', href: '/imperium', current: false },
+  { name: 'Imperium', href: '/imperium', current: true },
 ]
 
 function classNames(...classes) {
@@ -13,6 +13,9 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+
+  const [isShowing, setIsShowing] = useState(false)
+
   return (
     <Disclosure as="nav" className="bg-gray-900 sticky top-0 z-50 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
       {({ open }) => (
@@ -30,6 +33,7 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
+
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
@@ -39,10 +43,13 @@ export default function Header() {
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                    src="logo_full.png"
                     alt="Workflow"
                   />
                 </div>
+              </div>
+
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -50,7 +57,7 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-gray-900 text-amber-300 hover:text-white transition ease duration 800 ' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -58,13 +65,8 @@ export default function Header() {
                         {item.name}
                       </a>
                     ))}
-                  </div>
+                  </div>                  
                 </div>
-              </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                
-
-                
               </div>
             </div>
           </div>

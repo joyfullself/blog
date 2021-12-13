@@ -1,152 +1,101 @@
-import React from 'react';
-// import Image from 'next/image';
+// Scroll by a component's ref
+import React, { Component } from "react";
+import { ScrollTo } from "react-scroll-to";
 
-export default function Imperium() {
-    return (
-        <div className="container mx-auto px-10 mb-8">
-            <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 text-center">
-            1
+
+
+export default class Imperium extends Component {
+
+    render() {
+        return (
+            <div className="container mx-auto mt-4 px-8 shadow-lg rounded-lg py-8">
+
+                <div className="bg-white shadow-lg rounded-lg">
+                    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        <span className="block">Ready to unlock youth?</span>
+                        <span className="block text-amber-600">Get yours today.</span>
+                        </h2>
+                        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                        <div className="inline-flex rounded-md shadow">
+                            <a
+                            href="#"
+                            className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700"
+                            >
+                            Get started
+                            </a>
+                        </div>
+                        <div className="ml-3 inline-flex rounded-md shadow">
+                        <ScrollTo>
+                            {({ scroll }) => (
+                                <a
+                                onClick={() => scroll({x: 20, y: 2000, smooth: true })}
+                                className=" cursor-pointer inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+                                >
+                                Learn more
+                                </a>
+                            )}
+                        </ScrollTo>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-white shadow-lg rounded-lg mt-8" >
+                    <img
+                        className="object-fill  rounded-2xl mx-auto"
+                        src="1.png"
+                        height="100%"
+                        width="100%"
+                    />
+                </div>
+
+                <div className="bg-white shadow-lg rounded-lg py-8 mt-8" >
+                    <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 justify-items-center px-8">        
+                        <div className="lg:col-span-6 col-span-1 ml-5 mt-4">
+                            <h1 className="text-2xl font-semibold text-gray-700">Testimonies</h1>
+                        </div>
+                        <div className="lg:col-span-2 col-span-1">
+                            <img
+                            className="object-fill rounded-2xl mx-auto"
+                            src="testimony_1.png"
+                            height="100%"
+                            width="100%"
+                            />
+                        </div>
+                        <div className="">05</div>
+                        <div className="">06</div>
+                        <div className="">07</div>
+                        <div className="">07</div>
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-lg py-8 mt-8" >
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center">                            
+                        <div className="rounded-lg shadow-lg">
+                            <img
+                            className="object-fill  rounded-2xl mx-auto"
+                            src="imperium_1.png"
+                            height="100%"
+                            width="100%"
+                            />
+                        </div>
+                        <div className="rounded-lg shadow-lg">
+                            <img
+                            className="object-fill  rounded-2xl mx-auto"
+                            src="imperium_2.png"
+                            height="100%"
+                            width="100%"
+                            />
+                        </div>
+
+                        <div className="rounded-lg shadow-lg">
+                                Scroll To Top
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        // <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 justify-items-center ">
-        //     <div className="lg:col-span-12 col-span-1">
-        //         <img
-        //             className="h-20 w-15"
-        //             src="imperium_logo.png"
-        //         />
-        //     </div>
-        //     <div className="lg:col-span-12 col-span-1">
-        //         <h1 className="font-bold lg:text-4xl text-2xl text-center text-gray-700  px-4 lg:px-20">A lasting gift for ever-lasting youth</h1>
-        //     </div>
-        //     <div className="lg:col-span-12 col-span-1">
-        //         <a
-        //             href="/"
-        //             className="transition duration-500 ease hover:underline block px-3 py-2 rounded-md text-base font-medium"
-        //         >
-        //             <p className="text-blue-900 font-semibold">Shop gifts</p>
-        //         </a>
-        //     </div>
-
-        //     <div className="lg:col-span-12 col-span-1">
-        //         <img
-        //             className="h-full w-full pb-8"
-        //             src="1.png"
-        //         />
-        //     </div>
-        //     <div className="lg:col-span-4 col-span-1">
-        //         <img
-        //             className="h-full w-full pb-8"
-        //             src="2.png"
-        //         />
-        //     </div>
-        //     <div className="lg:col-span-8 col-span-1 lg:mt-20">
-        //         <h1 className="font-bold lg:text-4xl text-2xl text-center text-gray-700  px-4 lg:px-20">Remove - Ultimate Cleanse</h1>
-        //         <p className="text-gray-900 text-center font-semibold px-8 lg:px-20 mt-4">The Most Comprehensive Wholefood Nutrition.</p>
-        //         <a
-        //             href="/"
-        //             className="transition duration-500 ease hover:underline block px-3 py-2 rounded-md text-base font-medium"
-        //         >
-        //             {/* <p className="text-blue-900 text-center font-semibold">Shop gifts</p> */}
-        //         </a>
-        //     </div>
-
-        //     <div className="lg:col-span-4 col-span-1">
-        //         <img
-        //             className="h-full w-full pb-8"
-        //             src="3.png"
-        //         />
-        //     </div>
-        //     <div className="lg:col-span-8 col-span-1 lg:mt-20">
-        //         <h1 className="font-bold lg:text-4xl text-2xl text-center text-gray-700  px-4 lg:px-20">Remove & Replace - Ultimate Mind</h1>
-        //         <p className="text-gray-900 text-center font-semibold px-8 lg:px-20 mt-4">Promotes memory, concentration and cognitive function.</p>
-        //         <a
-        //             href="/"
-        //             className="transition duration-500 ease hover:underline block px-3 py-2 rounded-md text-base font-medium"
-        //         >
-        //             {/* <p className="text-blue-900 text-center font-semibold">Shop gifts</p> */}
-        //         </a>
-        //     </div>
-
-        //     <div className="lg:col-span-4 col-span-1">
-        //         <img
-        //             className="h-full w-full pb-8"
-        //             src="4.png"
-        //         />
-        //     </div>
-        //     <div className="lg:col-span-8 col-span-1 lg:mt-20">
-        //         <h1 className="font-bold lg:text-4xl text-2xl text-center text-gray-700  px-4 lg:px-20">Reinoculate & Repair - Ultimate Restore</h1>
-        //         <p className="text-gray-900 text-center font-semibold px-8 lg:px-20 mt-4">Probiotic strains from the longevity prefecture in Japan.</p>
-        //         <a
-        //             href="/"
-        //             className="transition duration-500 ease hover:underline block px-3 py-2 rounded-md text-base font-medium"
-        //         >
-        //             {/* <p className="text-blue-900 text-center font-semibold">Shop gifts</p> */}
-        //         </a>
-        //     </div>
-        //     <div className="lg:col-span-4 col-span-1">
-        //         <img
-        //             className="h-full w-full pb-8"
-        //             src="5.png"
-        //         />
-        //     </div>
-        //     <div className="lg:col-span-8 col-span-1 lg:mt-20">
-        //         <h1 className="font-bold lg:text-4xl text-2xl text-center text-gray-700  px-4 lg:px-20">Rebalance - Ultimate Youth & Vitality</h1>
-        //         <p className="text-gray-900 text-center font-semibold px-8 lg:px-20 mt-4">Complete total aging solution.</p>
-        //         <a
-        //             href="/"
-        //             className="transition duration-500 ease hover:underline block px-3 py-2 rounded-md text-base font-medium"
-        //         >
-        //             {/* <p className="text-blue-900 text-center font-semibold">Shop gifts</p> */}
-        //         </a>
-        //     </div>
-
-            
-        // </div>
-
-
-
-
-
-
-
-        
-        // <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8 justify-items-center">
-        //     <div className="col-span-3 ...">
-                // <img
-                //     className="h-20 w-15"
-                //     src="imperium_logo.png"
-                // />
-        //     </div>
-        //     <div className="col-span-3 ...">
-        //         <h1 className="font-bold text-4xl text-center text-gray-700  px-4 lg:px-20">A lasting gift for ever-lasting youth</h1>
-        //     </div>
-        //     <div className="col-span-3 ...">
-        //         <a
-        //             href="/"
-        //             className="transition duration-500 ease hover:underline block px-3 py-2 rounded-md text-base font-medium"
-        //         >
-        //             <p className="text-blue-900 font-semibold">Shop gifts</p>
-        //         </a>
-        //     </div>
-        //     <div className="col-span-3 ...">
-                // <img
-                //     className="h-full w-full pb-8"
-                //     src="1.png"
-                // />
-        //     </div>
-        //     <div className="lg:col-span-3 col-span-1...">
-        //         <img
-        //             className="object-contain h-full w-full pb-8"
-        //             src="2.png"
-        //         />
-        //     </div>
-        //     <div className="...">02</div>
-        //     <div className="...">03</div>
-        //     <div className="col-span-2 ...">04</div>
-        //     <div className="...">05</div>
-        //     <div className="...">06</div>
-        //     <div className="col-span-2 ...">07</div>
-        // </div>
-    )
+        )
+    }
 }
