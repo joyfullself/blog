@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { FeaturedPosts } from '../sections/index';
 import {PostCard, Subscribe, Categories, PostWidget } from '../components';
 import { getPosts } from '../services';
+import ScrollToTop from "react-scroll-to-top";
 
 // const posts = [
 //   { title: 'Post1', excerpt: 'Post1 Excerpt'},
@@ -10,12 +11,12 @@ import { getPosts } from '../services';
 
 export default function Home({ posts }) {
   return (
-    <div className="container mx-auto mt-8">
+    <div className="container mx-auto mt-8 px-8">
       <Head>
         <title>Joyfullself</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
-
+      <ScrollToTop smooth color="#D97706" width="28" height="28" viewBox="-50 0 256 256"/>
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
         <div className="lg:col-span-8 col-span-1">

@@ -1,9 +1,6 @@
-// Scroll by a component's ref
 import React, { Component } from "react";
 import { ScrollTo } from "react-scroll-to";
 import ScrollToTop from "react-scroll-to-top";
-// import ScrollingWrapper from '../Components/ScrollingWrapper'
-
 
 
 export default class Imperium extends Component {
@@ -11,7 +8,7 @@ export default class Imperium extends Component {
     render() {
         return (
             <div className="container mx-auto mt-4 px-8 shadow-lg rounded-lg py-8">
-                {/* <ScrollingWrapper> */}
+                <ScrollToTop smooth color="#D97706" width="28" height="28" viewBox="-50 0 256 256"/>
                 <div className="bg-white shadow-lg rounded-lg">
                     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -19,26 +16,26 @@ export default class Imperium extends Component {
                         <span className="block text-amber-600">Get yours today.</span>
                         </h2>
                         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                        <div className="inline-flex rounded-md shadow">
-                            <a
-                            href="#"
-                            className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700"
-                            >
-                            Get started
-                            </a>
-                        </div>
-                        <div className="ml-3 inline-flex rounded-md shadow">
-                        <ScrollTo>
-                            {({ scroll }) => (
+                            <div className="inline-flex rounded-md shadow">
                                 <a
-                                onClick={() => scroll({x: 20, y: 2000, smooth: true })}
-                                className="cursor-pointer inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+                                href="#"
+                                className="transition duration-500 ease inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700"
                                 >
-                                Learn more
+                                Get started
                                 </a>
-                            )}
-                        </ScrollTo>
-                        </div>
+                            </div>
+                            <div className="ml-3 inline-flex rounded-md shadow">
+                            <ScrollTo>
+                                {({ scroll }) => (
+                                    <a
+                                    onClick={() => scroll({x: 20, y: 2000, smooth: true })}
+                                    className="transition duration-500 ease cursor-pointer inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+                                    >
+                                    Learn more
+                                    </a>
+                                )}
+                            </ScrollTo>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,7 +89,6 @@ export default class Imperium extends Component {
                         </div>
                     </div>
                 </div>
-                {/* </ScrollingWrapper> */}
             </div>
         )
     }
