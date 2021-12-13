@@ -7,7 +7,7 @@ export default class Imperium extends Component {
 
     render() {
         return (
-            <div className="container mx-auto mt-4 px-8 shadow-lg rounded-lg py-8">
+            <div className="container mx-auto mt-4 px-8 rounded-lg py-8">
                 {/* <ScrollToTop smooth color="#D97706" width="28" height="28" viewBox="-50 0 256 256"/>
                 <div className="bg-white shadow-lg rounded-lg">
                     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
@@ -40,18 +40,18 @@ export default class Imperium extends Component {
                     </div>
                 </div> */}
 
-                <header class="relative flex items-center justify-center h-screen mb-12 overflow-hidden rounded-lg">
-                    <div class="relative z-30 px-12 py-4 text-2xl text-white bg-black bg-opacity-20 rounded-xl">
-                        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <header class="relative flex items-center justify-center overflow-hidden rounded-lg shadow-lg">
+                    <div class="relative z-30 px-8 py-4 text-2xl bg-black bg-opacity-40 rounded-xlg">
+                        <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                             <span className="block">Ready to unlock youth?</span>
                             <span className="block text-amber-600">Get yours today.</span>
                         </h2>
                         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0 py-4 justify-items-center">
-                            <div className="grid grid-cols-2 gap-6 justify-items-center px-8">
+                            <div className="grid grid-cols-2 gap-6 justify-items-center mx-auto">
                                 <div className="inline-flex rounded-md shadow">
                                     <a
                                     href="/"
-                                    className="transition duration-500 ease inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700"
+                                    className="transition duration-500 ease inline-flex items-center justify-center px-5 py-3 border border-transparent text-xs font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700"
                                     >
                                     Get started
                                     </a>
@@ -61,7 +61,7 @@ export default class Imperium extends Component {
                                     {({ scroll }) => (
                                         <a
                                         onClick={() => scroll({x: 20, y: 3000, smooth: true })}
-                                        className="transition duration-500 ease cursor-pointer inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+                                        className="transition duration-500 ease cursor-pointer inline-flex items-center justify-center px-5 py-3 border border-transparent text-xs font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-150"
                                         >
                                         Learn more
                                         </a>
@@ -76,7 +76,7 @@ export default class Imperium extends Component {
                     </video>
                 </header>
 
-                <div className="bg-white shadow-lg rounded-lg mt-8" >
+                <div className="bg-transparent shadow-lg rounded-lg mt-8" >
                     <img
                         className="object-fill  rounded-lg mx-auto"
                         src="1.png"
@@ -86,14 +86,14 @@ export default class Imperium extends Component {
                 </div>
 
 
-                <div className="bg-white shadow-lg rounded-lg py-8 mt-8" >
+                <div className="bg-transparent rounded-lg py-8 mt-8" >
                     <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 justify-items-center px-8">
                         <div className="lg:col-span-6 col-span-1 ml-5 mt-4">
                             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                                 <span className="block">Testimonies</span>
                             </h2>
                         </div>
-                        <div className="lg:col-span-2 col-span-1">
+                        <div className="lg:col-span-2 col-span-1 shadow-lg">
                             <img
                             className="object-fill rounded-2xl mx-auto"
                             src="testimony_1.png"
@@ -108,7 +108,7 @@ export default class Imperium extends Component {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-xl mx-auto mt-8" >
+                <div className="bg-transparent rounded-xl mx-auto mt-8" >
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center">
                         <div className="rounded-lg shadow-lg">
                             <img

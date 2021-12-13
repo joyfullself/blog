@@ -40,7 +40,7 @@ export default function Header() {
                     href="/"
                   >
                     <img
-                      className="block lg:hidden h-8 w-auto"
+                      className="block lg:hidden h-8 w-auto hover:scale-125"
                       src="logo.png"
                       alt="Workflow"
                     />
@@ -49,7 +49,7 @@ export default function Header() {
                     href="/"
                   >
                     <img
-                    className="hidden lg:block h-8 w-auto"
+                    className="hidden lg:block h-8 w-auto hover:scale-125"
                     src="logo_full.png"
                     alt="Workflow"
                     />
