@@ -8,8 +8,8 @@ export default class Imperium extends Component {
     render() {
         return (
             <div className="container mx-auto mt-4 px-8 rounded-lg py-8">
-                {/* <ScrollToTop smooth color="#D97706" width="28" height="28" viewBox="-50 0 256 256"/>
-                <div className="bg-white shadow-lg rounded-lg">
+                <ScrollToTop smooth color="#D97706" width="28" height="28" viewBox="-50 0 256 256"/>
+               {/* <div className="bg-white shadow-lg rounded-lg">
                     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         <span className="block">Ready to unlock youth?</span>
