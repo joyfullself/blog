@@ -8,7 +8,7 @@ export default class Imperium extends Component {
     render() {
         return (
             <div className="container mx-auto mt-4 px-8 shadow-lg rounded-lg py-8">
-                <ScrollToTop smooth color="#D97706" width="28" height="28" viewBox="-50 0 256 256"/>
+                {/* <ScrollToTop smooth color="#D97706" width="28" height="28" viewBox="-50 0 256 256"/>
                 <div className="bg-white shadow-lg rounded-lg">
                     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -28,7 +28,7 @@ export default class Imperium extends Component {
                             <ScrollTo>
                                 {({ scroll }) => (
                                     <a
-                                    onClick={() => scroll({x: 20, y: 2000, smooth: true })}
+                                    onClick={() => scroll({x: 20, y: 3000, smooth: true })}
                                     className="transition duration-500 ease cursor-pointer inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
                                     >
                                     Learn more
@@ -38,7 +38,43 @@ export default class Imperium extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
+
+                <header class="relative flex items-center justify-center h-screen mb-12 overflow-hidden rounded-lg">
+                    <div class="relative z-30 px-12 py-4 text-2xl text-white bg-black bg-opacity-20 rounded-xl">
+                        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                            <span className="block">Ready to unlock youth?</span>
+                            <span className="block text-amber-600">Get yours today.</span>
+                        </h2>
+                        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0 py-4 justify-items-center">
+                            <div className="grid grid-cols-2 gap-6 justify-items-center px-8">
+                                <div className="inline-flex rounded-md shadow">
+                                    <a
+                                    href="/"
+                                    className="transition duration-500 ease inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700"
+                                    >
+                                    Get started
+                                    </a>
+                                </div>
+                                <div className="ml-3 inline-flex rounded-md shadow">
+                                <ScrollTo>
+                                    {({ scroll }) => (
+                                        <a
+                                        onClick={() => scroll({x: 20, y: 3000, smooth: true })}
+                                        className="transition duration-500 ease cursor-pointer inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+                                        >
+                                        Learn more
+                                        </a>
+                                    )}
+                                </ScrollTo>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <video autoPlay loop muted class="absolute z-10 w-auto min-w-min min-h-min max-w-2xl">
+                        <source src="cta.mp4" type="video/mp4" />Your browser does not support the video tag.
+                    </video>
+                </header>
 
                 <div className="bg-white shadow-lg rounded-lg mt-8" >
                     <img
@@ -49,10 +85,13 @@ export default class Imperium extends Component {
                     />
                 </div>
 
+
                 <div className="bg-white shadow-lg rounded-lg py-8 mt-8" >
                     <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 justify-items-center px-8">
                         <div className="lg:col-span-6 col-span-1 ml-5 mt-4">
-                            <h1 className="text-2xl font-semibold text-gray-700">Testimonies</h1>
+                            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                                <span className="block">Testimonies</span>
+                            </h2>
                         </div>
                         <div className="lg:col-span-2 col-span-1">
                             <img
