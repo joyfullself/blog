@@ -70,11 +70,11 @@ export default class Imperium extends Component {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-lg py-8 mt-8" >
+                <div className="bg-white rounded-xl py-8 mt-8" >
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center">                            
                         <div className="rounded-lg shadow-lg">
                             <img
-                            className="object-fill  rounded-2xl mx-auto"
+                            className="object-fill rounded-lg mx-auto"
                             src="imperium_1.png"
                             height="100%"
                             width="100%"
