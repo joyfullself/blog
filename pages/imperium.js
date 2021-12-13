@@ -42,7 +42,7 @@ export default class Imperium extends Component {
 
                 <div className="bg-white shadow-lg rounded-lg mt-8" >
                     <img
-                        className="object-fill  rounded-2xl mx-auto"
+                        className="object-fill  rounded-lg mx-auto"
                         src="1.png"
                         height="100%"
                         width="100%"
