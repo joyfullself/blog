@@ -25,8 +25,8 @@ const about = () => {
                 <title>Joyfullself</title>
                 <link rel="icon" href="/logo.png" />
             </Head>
-                <div className="grid lg:grid-cols-2 grid-cols-1 justify-items-center mt-4 px-4">
-                    <div className="col-span-2">
+                <div className="bg-white grid rounded-lg shadow-lg lg:grid-cols-2 grid-cols-1 justify-items-center mt-4 px-4">
+                    <div className="col-span-2 mt-4">
                             <img
                             className="rounded-lg"
                             src="/cropped_about_1.jpg"
@@ -88,7 +88,7 @@ const about = () => {
                         </div>
                     </div>
 
-                    <div className="lg:col-span-1 col-span-2 mt-4">
+                    <div className="lg:col-span-1 col-span-2 mt-4 mb-8">
                         <div className="relative flex items-center justify-center overflow-hidden rounded-lg shadow-lg">
                             <div className="relative z-30 px-8 lg:py-4 py-12 text-2x rounded-xlg">
                                 <h1 className="lg:px-8 lg:py-24 px-10 text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
