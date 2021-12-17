@@ -120,8 +120,8 @@ export default class Imperium extends Component {
                                 height="100%"
                                 width="100%"
                             />
-                            <h1 className="text-3xl font-semibold text-grey-700 sm:text-4xl">Ultimate Cleanse</h1>
-                            <p className="text-2xl font-normal text-amber-600 sm:text-2xl py-4">Your new superpower</p>
+                            <h1 className="text-3xl font-semibold text-grey-700 sm:text-4xl">Ultimate Mind Cookies</h1>
+                            <p className="text-2xl font-normal text-amber-600 sm:text-2xl py-4">Unlock your brainpower</p>
                             <a href='/'>
                                 <p className="text-apple-blue hover:underline mb-4">Learn More ></p>
                             </a>
@@ -149,7 +149,7 @@ export default class Imperium extends Component {
                                 width="100%"
                             />
                             <h1 className="text-3xl font-semibold text-white sm:text-4xl">Ultimate Youth and Vitality</h1>
-                            <p className="text-2xl font-normal text-amber-300 sm:text-2xl py-4">Your new superpower</p>
+                            <p className="text-2xl font-normal text-amber-300 sm:text-2xl py-4">The Key to Youthful Vitality</p>
                             <a href='/'>
                                 <p className="text-apple-blue hover:underline mb-4">Learn More ></p>
                             </a>
