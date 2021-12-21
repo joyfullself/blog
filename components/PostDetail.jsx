@@ -1,5 +1,11 @@
 import React from 'react';
 import moment from 'moment';
+import {
+  FacebookShareButton,
+  FacebookIcon,
+} from 'next-share';
+
+// const currentURL = window.location.href // returns the absolute URL of a page
 
 const PostDetail = ({ post }) => {
     const getContentFragment = (index, text, obj, type) => {
@@ -9,16 +15,13 @@ const PostDetail = ({ post }) => {
           if (obj.bold) {
             modifiedText = (<b key={index}>{text}</b>);
           }
-    
           if (obj.italic) {
             modifiedText = (<em key={index}>{text}</em>);
           }
-    
           if (obj.underline) {
             modifiedText = (<u key={index}>{text}</u>);
           }
         }
-    
         switch (type) {
           case 'heading-three':
             return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
@@ -70,9 +73,17 @@ const PostDetail = ({ post }) => {
                             {moment(post.createdAt).format('MMM DD, YYYY')}
                         </span>
                     </div>
+                    <FacebookShareButton
+                      url={post.url}
+                      quote={'next-share is a social share buttons for your next React apps.'}
+                      hashtag={'#joyfullself'}
+                    >
+                      <FacebookIcon size={32} round />
+                    </FacebookShareButton>
                 </div>
                 <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
                 {console.log(post.content.raw)}
+                {console.log(currentURL)}
                 {post.content.raw.children.map((typeObj, index) => {
                     const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
 

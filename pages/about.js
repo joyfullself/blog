@@ -5,7 +5,7 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faTiktok, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faTiktok, faInstagram, faFacebook, faYoutube, faSpotify, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
 const socials = [
     { name: 'TikTok', href: '/', current: false },
@@ -35,39 +35,69 @@ const about = () => {
 
                     <div className="col-span-2">
                         <h1 className="text-center mt-8 mb-8 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                            Empower with Wellness
+                            Wellness and Joy
                         </h1>
                     </div>
 
-                    <div className="col-span-2">
-                        <div className= "grid grid-cols-3 justify-items-center text-black">
+                    <div className="col-span-2 lg:mx-80 my-4">
+                        <div className= "grid grid-cols-6 text-center justify-items-center text-black">
                             <div className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                                 <a
                                     href='https://www.tiktok.com/@joyfullself?lang=en'
                                 >
-                                    <h1 className="text-xl tracking-tight font-semibold text-gray-900 sm:text-xl md:text-xl">
+                                    <h1 className="text-xs tracking-tight font-semibold text-black sm:text-xl md:text-xl">
                                         <FontAwesomeIcon icon={faTiktok}></FontAwesomeIcon>
-                                        <span className="text-white">TT</span>
                                     </h1>
+                                    <p className="text-xs mt-4">
+                                        
+                                    </p>
                                 </a>
                             </div>
                             <div className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                                 <a
                                     href='https://www.instagram.com/joyfullself/'
                                 >
-                                    <h1 className="text-xl tracking-tight font-semibold text-gray-900 sm:text-xl md:text-xl">
+                                    <h1 className="text-xs tracking-tight font-semibold text-black sm:text-xl md:text-xl">
                                         <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-                                        <span className="text-white">IG</span>
                                     </h1>
+                                    <p className="text-xs mt-4">
+                                        
+                                    </p>
                                 </a>
                             </div>
                             <div className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                                 <a
                                     href='https://www.facebook.com/joyfullself'
                                 >
-                                    <h1 className="text-xl tracking-tight font-semibold text-gray-900 sm:text-xl md:text-xl">
+                                    <h1 className="text-xl tracking-tight font-semibold text-black sm:text-xl md:text-xl">
                                         <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
-                                        <span className="text-white">FB</span>
+                                    </h1>
+                                </a>
+                            </div>
+                            <div className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                                <a
+                                    href=''
+                                >
+                                    <h1 className="text-xl tracking-tight font-semibold sm:text-xl md:text-xl">
+                                        <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+                                    </h1>
+                                </a>
+                            </div>
+                            <div className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                                <a
+                                    href=''
+                                >
+                                    <h1 className="text-xl tracking-tight font-semibold sm:text-xl md:text-xl">
+                                        <FontAwesomeIcon icon={faSpotify}></FontAwesomeIcon>
+                                    </h1>
+                                </a>
+                            </div>
+                            <div className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                                <a
+                                    href=''
+                                >
+                                    <h1 className="text-xl tracking-tight font-semibold sm:text-xl md:text-xl">
+                                        <FontAwesomeIcon icon={faTelegram}></FontAwesomeIcon>
                                     </h1>
                                 </a>
                             </div>
