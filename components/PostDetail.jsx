@@ -1,11 +1,5 @@
 import React from 'react';
 import moment from 'moment';
-import {
-  FacebookShareButton,
-  FacebookIcon,
-} from 'next-share';
-
-// const currentURL = window.location.href // returns the absolute URL of a page
 
 const PostDetail = ({ post }) => {
     const getContentFragment = (index, text, obj, type) => {
@@ -73,17 +67,9 @@ const PostDetail = ({ post }) => {
                             {moment(post.createdAt).format('MMM DD, YYYY')}
                         </span>
                     </div>
-                    <FacebookShareButton
-                      url={post.url}
-                      quote={'next-share is a social share buttons for your next React apps.'}
-                      hashtag={'#joyfullself'}
-                    >
-                      <FacebookIcon size={32} round />
-                    </FacebookShareButton>
                 </div>
                 <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
                 {console.log(post.content.raw)}
-                {console.log(currentURL)}
                 {post.content.raw.children.map((typeObj, index) => {
                     const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
 
